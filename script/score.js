@@ -24,4 +24,4 @@ export function updateScore(){
   blueLoses.innerHTML = `loses: ${score.loses.blue}`;
 }
 import { score } from "./tic tac toe";
-console.log('changes 2');
+console.log('fako')
