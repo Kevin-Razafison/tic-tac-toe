@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles/tic tac toe.css">
+</head>
+<body>
+  <div class="play">
+    <p class="title">Tic Tac Toe GAME!</p>
+    <center><button class="button-play">Play</button></center>
+  </div>
+
+  <div class="sign">
+    <p class="chooseSign">Choose Sign</p>
+    <div class="sign-container">
+      <button class="sign-button-X"><span><center>X</center></span></button>
+      <button class="sign-button-O"><span><center>O</center></span></button>
+    </div>
+  </div>
+
+  <center>
+  <div class="score">
+
+    <div class="blue">
+      BLUE
+      <div class="wins-blue">wins : 0</div>
+      <div class="loses-blue">loses : 0</div>  
+    </div>
+    <button class="Score-reset-button">Reset Score</button>
+    <div class="red">
+      RED
+      <div class="wins-red">wins : 0</div>
+      <div class="loses-red">loses : 0</div>  
+    </div>
+  </div>
+  <div class="gameMod">
+    <p class="gameMod-text">GAME MOD</p>
+    <div class="chooseMod">
+      <button class="multiplayer-button">Multiplayer</button>
+      <button class="singleplayer-button">Single Player</button>
+    </div>
+  </div>
+  <div class="game-container">
+    <div class="first-row row">
+      <div class="first-case case"></div>
+      <div class="second-case case"></div>
+      <div class="third-case case"></div>
+    </div>
+    <div class="second-row row">
+      <div class="fourth-case case"></div>
+      <div class="fifth-case case"></div>
+      <div class="sixth-case case"></div>
+    </div>
+    <div class="third-row row">
+      <div class="seventh-case case"></div>
+      <div class="eigth-case case"></div>
+      <div class="ninth-case case"></div>
+    </div>
+  </div>
+  <div class="result">
+    
+  </div>
+</center>
+  <script type="module" src="script/tic_tac_toe.js"></script>
+</body>
+</html>

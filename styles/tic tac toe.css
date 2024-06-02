@@ -1,0 +1,225 @@
+body{
+  background-color: black;
+  margin-top: 20vh;
+  margin-right: 10vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  color: white;
+  display: inline-block;
+  margin-left: 30px;
+}
+.result{
+  margin-top: 25px;
+  color: white;
+  z-index: 102;
+  margin-left: 150px;
+}
+.button-play{
+  font-size: 25px;
+  border: none;
+  padding: 5px 30px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 1px 1px 12px red ;
+}
+.quit-button, .replay-button{
+  font-size: 25px;
+  border: none;
+  padding: 5px 30px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 25px;
+  box-shadow: 1px 1px 12px red;
+  margin-right: 12px;
+}
+.Score-reset-button{
+  font-size: 17px;
+  border: none;
+  padding: 2px 2px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 0px;
+  box-shadow: 1px 1px 12px red;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.choose{
+  display: block;
+  margin-left: -70px;
+}
+.quit-button:active , .button-play:active , .replay-button:active, .Score-reset-button:active{
+  opacity: 0.7;
+}
+
+.title{
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.case{
+  border: 1px blue solid;
+  background-color: black;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  cursor: pointer;
+}
+.game-container{
+  margin-top: -150px;
+  width: 50px;
+  display: grid;
+  margin-right: 100px;
+}
+.row{
+  border: 1px blue solid;
+  width: 212px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  column-gap: 20px;
+}
+.X{
+  position: absolute;
+  right: 10%;
+  top: -17%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85px;
+  color: blue;
+  text-shadow: 1px 1px 12px blue;
+  z-index: 101;
+}
+.tie{
+  font-size: 35px;
+  margin-left: -95px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.O{
+  position: absolute;
+  right: -2%;
+  top: -26%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95px;
+  text-shadow: 1px 1px 12px red;
+  color: red;
+  z-index: 101;
+}
+.O-affiche{
+  font-size: 45px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-weight: 500;
+  margin-left: -100px;
+  text-shadow: 1px 1px 12px red;
+}
+.X-affiche{
+  font-size: 45px;
+  color: blue;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-shadow: 1px 1px 12px blue;
+  margin-left: -100px;
+}
+
+.sign {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 100px 50px;
+}
+.chooseSign{
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 130px;
+  margin-right: 0;
+}
+.sign-container{
+  display: block;
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+.sign-button-X, .sign-button-O{
+  flex: 1;
+  margin-left: 10px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+.sign-button-X{
+  color: blue;
+  box-shadow: 1px 1px 12px blue;
+}
+.sign-button-O{
+  color: red;
+  box-shadow: 1px 1px 12px red;
+}
+.sign-button-O:active , .sign-button-X:active {
+  opacity: 0.7;
+}
+
+.red{
+  border: 1px red solid;
+  padding-top: 8px;
+  font-weight: 700;
+  box-shadow: 1px 1px 12px red;
+  text-shadow: 1px 1px 5px white;
+}
+.blue{
+  border: 1px blue solid;
+  padding-top: 8px;
+  font-weight: 700;
+  box-shadow: 1px 1px 12px blue;
+  text-shadow: 1px 1px 5px white;
+}
+.score{
+  width: 99%;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 100px 130px 100px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.multiplayer-button, .singleplayer-button{
+  color: white;
+  background-color: blue;
+  border: blue 1px none;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 15px white;
+  cursor: pointer;
+}
+.gameMod{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: -220px;
+  grid-template-rows: 100px 100px;
+}
+.gameMod-text{
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+  margin-right: 0;
+}
+.multiplayer-button:active, .singleplayer-button:active{
+  opacity: 0.7;
+}
